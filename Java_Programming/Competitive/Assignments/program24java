@@ -1,0 +1,29 @@
+// Program to count total number of factors of a given number
+
+class Logic
+{
+    void CountFactors(int Num)
+    {
+        int iCnt = 0, iCount = 0;
+
+        for(iCnt = 1; iCnt <= Num; iCnt++)
+        {
+            if((Num % iCnt) == 0)
+            {
+                iCount++;
+            }
+        }
+
+        System.out.println("Total number of factors are : "+iCount);
+    }
+}
+
+class program24
+{
+    public static void main(String A[])
+    {
+        Logic lobj = new Logic();
+
+        lobj.CountFactors(20);
+    }
+}
